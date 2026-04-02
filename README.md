@@ -1,5 +1,5 @@
 <p align="center">
-<img width="400" height="400" alt="hf_20260309_045718_0a075c8b-05d0-4610-8f94-1dfe0136d849" src="https://github.com/Blitzari/Blitzari/blob/main/blitzari-removebg-preview.png" />
+<img width="400" height="400" alt="hf_20260309_045718_0a075c8b-05d0-4610-8f94-1dfe0136d849" src="https://github.com/Blitzari/Blitzari-Agents/blob/main/blitzari-removebg-preview.png" />
 
 <h1 align="center">Blitzari Terminal</h1>
 
