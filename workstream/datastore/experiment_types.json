@@ -1,0 +1,30 @@
+export interface Experiment {
+  experimentId: string
+  createdAt: string
+  description: string
+  parameters: {
+    tokenSymbol: string
+    analysisWindowMinutes: number
+    volatilityThreshold: number
+  }
+  status: "draft" | "running" | "completed" | "failed"
+  results: Record<string, any> | null
+  notes: string
+}
+
+/** Factory for a new draft experiment */
+export function createDraftExperiment(tokenSymbol = ""): Experiment {
+  return {
+    experimentId: crypto.randomUUID(),
+    createdAt: new Date().toISOString(),
+    description: "",
+    parameters: {
+      tokenSymbol,
+      analysisWindowMinutes: 0,
+      volatilityThreshold: 0,
+    },
+    status: "draft",
+    results: null,
+    notes: "",
+  }
+}
